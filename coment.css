@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.comentario-container {
+    width: 90%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box-comentario {
+    width: 80%;
+    height: 150px;
+    display: flex;
+    border-radius: 5px;
+    
+}
+
+.perfilcoment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nomeperfil {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 10px;
+    background-color: red;
+    align-items: center;
+}
+.stars {
+    color: rgb(255, 217, 0);
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.coment {
+    height: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .fotos-content {
+        grid-template-columns: 3fr;
+        margin-top: 150px;
+    }
+    .comentario-container{
+        width: 80%;
+    }
+    .coment {
+        font-size: 10px;
+    }
+    span {
+        font-size: 11px;
+    }
+}
